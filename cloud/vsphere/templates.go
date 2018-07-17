@@ -577,7 +577,7 @@ spec:
             # chosen from this range. Changing this value after installation will have
             # no effect. This should fall within '--cluster-cidr'.
             - name: CALICO_IPV4POOL_CIDR
-              value: "192.168.0.0/16"
+              value: "${POD_CIDR}"
             - name: CALICO_IPV4POOL_IPIP
               value: "Always"
             # Disable IPv6 on Kubernetes.
